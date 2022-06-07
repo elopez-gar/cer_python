@@ -3,5 +3,5 @@
 print("Fundamentos","Programación","en")
 print("Python")
 print()
-print("Fundamentos","Programación","en", sep="_", end=" *")
+print("Fundamentos","Programación","en", sep="***", end="...")
 print("Python")
