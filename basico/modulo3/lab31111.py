@@ -8,8 +8,11 @@ ingresos = float(input("Introduce el ingreso anual: "))
 #
 # Escribe tu código aquí.
 #
-if ingresos <= 85528:
+if ingresos <= 0: impuestos =0
+elif ingresos <= 85528:
     impuestos = ingresos*0.18 - 556.02
+    if impuestos <= 0:
+        impuestos = 0
 else:
     impuestos = 14839.02 + (ingresos-85528)*.32
 
