@@ -20,9 +20,8 @@ for letter in user_word:
         continue
     elif letter == "U":
         continue
-    else:
-            
-            print(letter, "\n")
+    else:    
+        print(letter, "\n")
     
 print ("El ciclo ha sido finalizado")
     
