@@ -3,9 +3,6 @@
 #Fecha: 16 de junio del 2022
 
 # paso 1
-from curses import beep
-
-
 beatles = []
 print("Paso 1:", beatles)
 
