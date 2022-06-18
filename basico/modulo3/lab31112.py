@@ -9,13 +9,14 @@ year = int(input("Introduce un año: "))
 # Escribe tu código aquí.
 #	
 
-if year <= 1582:
-    print("No dentro del período del calendario Gregoriano")
-if not (year % 4 == 0):
-    print("Año Común")
-elif not (year % 100 == 0):
-    print("Año Bisiesto")
-elif not (year % 400 == 0):
-    print("Año Común")
+if year >= 1582:
+    if not (year % 4 == 0):
+        print("Año Común")
+    elif not (year % 100 == 0):
+        print("Año Bisiesto")
+    elif not (year % 400 == 0):
+        print("Año Común")
+    else:
+        print("Año Bisiesto")
 else:
-    print("Año Bisiesto")
+    print("No esta dentro del período del calendario Gregoriano")
