@@ -1,6 +1,6 @@
 #Laboratorio 4.3.1.6
 #Elaborado por: Emmanuel López García
-#Fecha: 17 de junio del 2022
+#Fecha: 24 de junio del 2022
 
 def is_year_leap(year):
     if year % 4 == 0:
