@@ -37,11 +37,7 @@ def day_of_year(year, month, day):
     months = [31,28,31,30,31,30,31,31,30,31,30,31]
     dias = 0
     for d in range (1, month):
-        d +=  1
-        if dias < month:
-            return dias
-        else:
-            return False
+        
 
 
 print(day_of_year(2000, 12, 31))
