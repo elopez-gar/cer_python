@@ -2,24 +2,22 @@
 #Elaborado por: Emmanuel López García
 #Fecha: 17 de junio del 2022
 
-from types import ModuleType
-
-
 def is_year_leap(year):
     if year % 4 == 0:
-        return True
-    elif year % 100 != 0:
-        return False
-    elif year % 400 == 0:
-        return True
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return True
     else:
-        False
-#
+        return False
 # Tu código del LABORATORIO 4.3.6.
 #
 
 def days_in_month(year, month):
-    months = [31,28,31,30,31,30,31,30,31,30,31,31]
+    """months = [31,28,31,30,31,30,31,31,30,31,30,31]
     if is_year_leap(year) and month == 2:
         return months[month-1] + 1
     if not is_year_leap(year) and month == 2:
@@ -28,6 +26,16 @@ def days_in_month(year, month):
         return months[month-1]
     else:
         return None
+    """
+    months = [31,28,31,30,31,30,31,31,30,31,30,31]
+    if is_year_leap(year):
+        if months[month - 1] == 28:
+            return 29
+        else:
+            return months[month - 1]
+    else:
+        return months[month - 1]
+    return None
 #
 # Escribe tu código aquí.
 #
